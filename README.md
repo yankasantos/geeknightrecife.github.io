@@ -1,4 +1,4 @@
-# Geek Night Recife [![Status das Dependências](https://gemnasium.com/mateusrevoredo/geeknightrecife.github.io.svg)](https://gemnasium.com/mateusrevoredo/geeknightrecife.github.io)
+# Geek Night Recife [![Status das Dependências](https://gemnasium.com/geeknightrecife/geeknightrecife.github.io.svg)](https://gemnasium.com/geeknightrecife/geeknightrecife.github.io)
 
 Hotsite do Geek Night Recife.
 
@@ -6,7 +6,7 @@ Esse hotsite tem seu build e deploy orgulhosamente realizados pelo [Snap CI](htt
 
 __No momento o status do build é:__
 
-[![Status do Build](https://snap-ci.com/mateusrevoredo/geeknightrecife.github.io/branch/source/build_image.svg)](https://snap-ci.com/mateusrevoredo/geeknightrecife.github.io/)
+[![Status do Build](https://snap-ci.com/geeknightrecife/geeknightrecife.github.io/branch/source/build_image)](https://snap-ci.com/geeknightrecife/geeknightrecife.github.io/branch/source)
 
 O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para informações específicas do template [clique aqui](https://github.com/gdg-x/zeppelin).
 
@@ -74,13 +74,6 @@ O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para inform
 
 ##TODO
 
-- [x] ~~Clean up do layout(seções removidas)~~
-- [x] ~~Feed do Twitter~~
-- [x] ~~Exibir menos conteúdo quando não tiver evento confirmado~~
-- [x] ~~Criar Google Form para receber os candidados a palestrante.~~
-- [x] ~~Adicionar task de minificação no build~~
-- [x] ~~Fazer o Snap CI deletar a pasta _site inteira e substituir o conteúdo. Ao invés de fazer merge.~~
-- [ ] Adicionar time organizador no Analytics, Search, Snap etc.
 - [ ] Corrigir issue no delay do load das boxes de eventos anteriores
 - [ ] Centralizar as datas do evento em um único ponto da configuração
 - [ ] Cadastrar o histórico de todos os eventos passados
