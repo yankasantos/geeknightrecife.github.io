@@ -80,3 +80,4 @@ O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para inform
 - [ ] Enviar o evento anterior para "previous" no daily build do SnapCI
 - [ ] Adicionar convenções de tamanhos de imagem e nomenclatura de arquivos aqui no README
 - [ ] Adicionar o badge do slackin em algum ponto do site
+- [ ] Form de "quero palestrar inline"
