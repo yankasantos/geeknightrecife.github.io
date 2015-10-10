@@ -74,8 +74,6 @@ O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para inform
 
 ##TODO
 
-- [ ] Corrigir issue no delay do load das boxes de eventos anteriores
-- [ ] Centralizar as datas do evento em um único ponto da configuração
 - [ ] Cadastrar o histórico de todos os eventos passados
 - [ ] Enviar o evento anterior para "previous" no daily build do SnapCI
 - [ ] Adicionar convenções de tamanhos de imagem e nomenclatura de arquivos aqui no README
