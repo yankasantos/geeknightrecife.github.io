@@ -40,25 +40,51 @@ O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para inform
 
 ## Atualizando
 
+* O Snap CI roda 2 builds diários agendados. Às 12:30 e 00:30. O build agendado tem duas funções principais.
+    1. Capturar as menções da hashtag #geeknightrecife no twitter e adicionar a página
+    2. Arquivar um evento passado automaticamente.
+       
+       No build da madrugada, o Snap CI irá verificar se o último evento cadastrado na página já aconteceu, e irá automaticamente colocar esse evento na seção "Edições Anteriores" do site, setar o parâmetro `preparingNextEvent` do arquivo `_config.yml` para `true` novamente, e criar a tag no git com o formato `yyyy-MM-DD`. Se por algum motivo essa etapa não for executada automaticamente, vá para [Atualizando Manualmente](https://github.com/geeknightrecife/geeknightrecife.github.io#atualizando manualmente) para fazer a execução manual.
+
+1. Para cadastrar um novo evento, atualize os arquivos `location.yml`, `organizers.yml`, `schedule.yml`, `sessions.yml` e `speakers.yml` com as informações do próximo evento.
+
+2. Caso o participante da edição passada tenha enviado o link para os slides, adicionar o link para a apresentação, inserindo uma key `presentation:` no arquivo `sessions.yml` copiado no passo anterior.
+
+3. Substituir `heroButtons` no arquivo ```_config.yml```para o link do novo evento do Facebook. 
+
+4. Garanta que o parâmetro `preparingNextEvent` do arquivo `_config.yml` esteja setado para false.
+
+5. Adicione as fotos dos palestrantes e patrocinadores de acordo com as guidelines da seção [Guidelines](https://github.com/geeknightrecife/geeknightrecife.github.io#guidelines)
+
+6. Commit e push bara o branch `source`
+
+  ```
+    $ git push origin source
+  ```
+
+7. O Snap CI irá detectar o novo push no branch `source`, e fará o build e publicação do hotsite.
+
+8. O progresso do build pode ser acompanhado [aqui](https://snap-ci.com/mateusrevoredo/geeknightrecife.github.io/branch/source)
+
+9. Após a finalização do build com sucesso, a nova versão do site estará disponível [aqui](http://geeknightrecife.github.io) 
+
+##Atualizando Manualmente
+
 1. Antes de começar a modificar a versão atual para adicionar informações de um novo evento, crie uma tag para o último
 
   ```
     $ git tag yyyy-MM-DD // E.x.: 2015-07-05
   ```
 
-2. ####Atualizar o arquivo `_config.yml`
-
-	1. Alterar o `# Location Block` para o novo endereço onde ocorrerá o evento.
-	2. Alterar o `eventDate` para a nova data
-	3. Substituir `heroButtons` para o link do novo evento do Facebook.
-
-3. ####Mover os dados do evento anterior para o histórico
+2. ####Mover os dados do evento anterior para o histórico
 	1. Criar uma pasta no formato `yyyy-MM-DD` dentro de `_data/archive`
-	2. Copiar os arquivos `schedule.yml`, `speakers.yml`, `sessions.yml` e `organizers.yml` para dentro da pasta criada antes de começar a editá-los.
+	2. Copiar os arquivos `schedule.yml`, `speakers.yml`, `sessions.yml`, `organizers.yml` e `location.yml` para dentro da pasta criada antes de começar a editá-los.
 	3. Caso o participante da edição passada tenha enviado o link para os slides, adicionar o link para a apresentação, inserindo uma key `presentation:` no arquivo `sessions.yml` copiado no passo anterior.
-	3. Adicionar entrada para o evento anterior no arquivo `_data/previous.yml`
 
-4. Editar os arquivos `schedule.yml`, `speakers.yml`, `sessions.yml` e `organizers.yml` adicionando/alterando as informações para o evento que irá ocorrer.	
+3. Atualize os arquivos `location.yml`, `organizers.yml`, `schedule.yml`, `sessions.yml` e `speakers.yml` dentro da pasta `_data` com as informações do próximo evento.
+
+4. ####Atualizar o arquivo `_config.yml`
+	1. Substituir `heroButtons` para o link do novo evento do Facebook.
 
 5. Commit e push bara o branch `source`
 
@@ -66,16 +92,9 @@ O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para inform
     $ git push origin source
   ```
 
-6. O Snap CI irá detectar o novo push no branch `source`, e fará o build e publicação do hotsite.
-
-7. O progresso do build pode ser acompanhado [aqui](https://snap-ci.com/mateusrevoredo/geeknightrecife.github.io/branch/source)
-
-8. Após a finalização do build com sucesso, a nova versão do site estará disponível [aqui](http://geeknightrecife.github.io) 
-
 ##TODO
 
 - [ ] Cadastrar o histórico de todos os eventos passados
-- [ ] Enviar o evento anterior para "previous" no daily build do SnapCI
 - [ ] Adicionar convenções de tamanhos de imagem e nomenclatura de arquivos aqui no README
 - [ ] Adicionar o badge do slackin em algum ponto do site
 - [ ] Form de "quero palestrar inline"
