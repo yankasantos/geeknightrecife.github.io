@@ -96,6 +96,5 @@ O hotsite utiliza o `Project Zeppelin` com diversas customizações. Para inform
 
 - [ ] Cadastrar o histórico de todos os eventos passados
 - [ ] Adicionar convenções de tamanhos de imagem e nomenclatura de arquivos aqui no README
-- [ ] Adicionar o badge do slackin em algum ponto do site
 - [ ] Form de "quero palestrar inline"
 - [ ] Adicionar Gulp para minificação, geração da build, watch etc.
