@@ -7,14 +7,14 @@ Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .
 $ [32mgit checkout source[0m
 Switched to a new branch 'source'
 Branch source set up to track remote branch source from origin.
-Command [32mgit checkout source[0m exited successfully with status 0. Took 0.0798 seconds.
+Command [32mgit checkout source[0m exited successfully with status 0. Took 0.06874 seconds.
 
 $ [32mgit reset --hard 1233f8b2ffecf3f8397e9a32da5ef5616f84c02c[0m
 HEAD is now at 1233f8b Merge pull request #5 from mstred/source
-Command [32mgit reset --hard 1233f8b2ffecf3f8397e9a32da5ef5616f84c02c[0m exited successfully with status 0. Took 0.077 seconds.
+Command [32mgit reset --hard 1233f8b2ffecf3f8397e9a32da5ef5616f84c02c[0m exited successfully with status 0. Took 0.06927 seconds.
 
 $ [32mgit submodule update --init --recursive[0m
-Command [32mgit submodule update --init --recursive[0m exited successfully with status 0. Took 0.08669 seconds.
+Command [32mgit submodule update --init --recursive[0m exited successfully with status 0. Took 0.06741 seconds.
 
 $ export SNAP_CI=true
 $ export CI=true
@@ -22,7 +22,7 @@ $ export SNAP_CACHE_DIR=/var/go
 $ export LANG=en_US.UTF-8
 $ export LC_ALL=en_US.UTF-8
 $ export SNAP_WORKING_DIR=/var/snap-ci/repo
-$ export SNAP_PIPELINE_COUNTER=143
+$ export SNAP_PIPELINE_COUNTER=144
 $ export SNAP_STAGE_NAME=Dependencies
 $ export SNAP_BRANCH=source
 $ export SNAP_COMMIT=1233f8b2ffecf3f8397e9a32da5ef5616f84c02c
@@ -32,8 +32,8 @@ $ export SNAP_INTEGRATION_PIPELINE=false
 
 $ [32mbundle install[0m
 Using RedCloth 4.2.9
-Using i18n 0.7.0
 Using json 1.8.3
+Using i18n 0.7.0
 Using minitest 5.8.0
 Using thread_safe 0.3.5
 Using addressable 2.3.8
@@ -77,33 +77,33 @@ Using simple_oauth 0.3.1
 Using bundler 1.10.6
 Using tzinfo 1.2.2
 Using memoizable 0.4.2
+Using autoprefixer-rails 6.0.3
 Using parslet 1.5.0
 Using timers 4.0.4
 Using classifier-reborn 2.0.3
-Using autoprefixer-rails 6.0.3
+Using coffee-script 2.4.1
 Using compass-core 1.0.3
 Using compass-import-once 1.0.5
 Using jekyll-sass-converter 1.3.0
 Using sass-media_query_combiner 0.0.7
 Using rb-inotify 0.9.5
 Using ethon 0.8.0
-Using unf 0.1.4
 Using faraday 0.9.1
-Using coffee-script 2.4.1
-Using nokogiri 1.6.6.2
+Using unf 0.1.4
 Using pygments.rb 0.6.3
+Using nokogiri 1.6.6.2
 Using activesupport 4.2.4
 Using toml 0.1.2
 Using celluloid 0.16.0
+Using jekyll-coffeescript 1.0.1
 Using compass 1.0.3
 Using typhoeus 0.8.0
 Using domain_name 0.5.24
-Using jekyll-coffeescript 1.0.1
+Using koala 2.2.0
 Using html-pipeline 1.9.0
 Using listen 2.10.1
 Using github-pages-health-check 0.5.3
 Using http-cookie 1.0.2
-Using koala 2.2.0
 Using jekyll-watch 1.2.1
 Using http 0.9.7
 Using jekyll 2.4.0
@@ -114,6 +114,6 @@ Using jemoji 0.5.0
 Using github-pages 39
 Bundle complete! 6 Gemfile dependencies, 81 gems now installed.
 Bundled gems are installed into /var/go/.bundled-gems.
-Command [32mbundle install[0m exited successfully with status 0. Took 1.66 seconds.
+Command [32mbundle install[0m exited successfully with status 0. Took 1.23 seconds.
 
 Saving console log for later
