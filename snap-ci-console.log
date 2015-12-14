@@ -2,19 +2,19 @@
 $ [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m
 Cloning into '.'...
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
-Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0. Took 1.1 seconds.
+Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0. Took 1.84 seconds.
 
 $ [32mgit checkout source[0m
 Switched to a new branch 'source'
 Branch source set up to track remote branch source from origin.
-Command [32mgit checkout source[0m exited successfully with status 0. Took 0.07447 seconds.
+Command [32mgit checkout source[0m exited successfully with status 0. Took 0.08414 seconds.
 
 $ [32mgit reset --hard 6071b0e5a16f645485d72bf7ee903c5f5dbba49a[0m
 HEAD is now at 6071b0e Add presentation links
-Command [32mgit reset --hard 6071b0e5a16f645485d72bf7ee903c5f5dbba49a[0m exited successfully with status 0. Took 0.05808 seconds.
+Command [32mgit reset --hard 6071b0e5a16f645485d72bf7ee903c5f5dbba49a[0m exited successfully with status 0. Took 0.05344 seconds.
 
 $ [32mgit submodule update --init --recursive[0m
-Command [32mgit submodule update --init --recursive[0m exited successfully with status 0. Took 0.05855 seconds.
+Command [32mgit submodule update --init --recursive[0m exited successfully with status 0. Took 0.05921 seconds.
 
 $ export SNAP_CI=true
 $ export CI=true
@@ -22,7 +22,7 @@ $ export SNAP_CACHE_DIR=/var/go
 $ export LANG=en_US.UTF-8
 $ export LC_ALL=en_US.UTF-8
 $ export SNAP_WORKING_DIR=/var/snap-ci/repo
-$ export SNAP_PIPELINE_COUNTER=183
+$ export SNAP_PIPELINE_COUNTER=184
 $ export SNAP_STAGE_NAME=Dependencies
 $ export SNAP_BRANCH=source
 $ export SNAP_COMMIT=6071b0e5a16f645485d72bf7ee903c5f5dbba49a
@@ -77,8 +77,9 @@ Using simple_oauth 0.3.1
 Using bundler 1.10.6
 Using tzinfo 1.2.2
 Using memoizable 0.4.2
-Using parslet 1.5.0
 Using autoprefixer-rails 6.0.3
+Using parslet 1.5.0
+Using timers 4.0.4
 Using classifier-reborn 2.0.3
 Using coffee-script 2.4.1
 Using compass-core 1.0.3
@@ -89,24 +90,23 @@ Using rb-inotify 0.9.5
 Using ethon 0.8.0
 Using unf 0.1.4
 Using faraday 0.9.1
-Using timers 4.0.4
 Using pygments.rb 0.6.3
 Using nokogiri 1.6.6.2
-Using toml 0.1.2
-Using jekyll-coffeescript 1.0.1
 Using activesupport 4.2.4
+Using toml 0.1.2
+Using celluloid 0.16.0
+Using jekyll-coffeescript 1.0.1
+Using compass 1.0.3
 Using typhoeus 0.8.0
 Using domain_name 0.5.24
 Using koala 2.2.0
-Using celluloid 0.16.0
-Using html-pipeline 1.9.0
-Using github-pages-health-check 0.5.3
-Using http-cookie 1.0.2
-Using compass 1.0.3
 Using listen 2.10.1
+Using github-pages-health-check 0.5.3
+Using html-pipeline 1.9.0
+Using http-cookie 1.0.2
 Using http 0.9.7
-Using jekyll-watch 1.2.1
 Using twitter 5.15.0
+Using jekyll-watch 1.2.1
 Using jekyll 2.4.0
 Using jekyll-mentions 0.2.1
 Using jekyll-redirect-from 0.8.0
@@ -114,6 +114,6 @@ Using jemoji 0.5.0
 Using github-pages 39
 Bundle complete! 6 Gemfile dependencies, 81 gems now installed.
 Bundled gems are installed into /var/go/.bundled-gems.
-Command [32mbundle install[0m exited successfully with status 0. Took 1.84 seconds.
+Command [32mbundle install[0m exited successfully with status 0. Took 1.52 seconds.
 
 Saving console log for later
