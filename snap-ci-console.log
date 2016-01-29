@@ -2,19 +2,19 @@
 $ [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m
 Cloning into '.'...
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
-Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0. Took 1.52 seconds.
+Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0. Took 1.51 seconds.
 
 $ [32mgit checkout source[0m
 Switched to a new branch 'source'
 Branch source set up to track remote branch source from origin.
-Command [32mgit checkout source[0m exited successfully with status 0. Took 0.06655 seconds.
+Command [32mgit checkout source[0m exited successfully with status 0. Took 0.08476 seconds.
 
 $ [32mgit reset --hard 93873664bffe54307fa0f6f51e1494056c57fe54[0m
 HEAD is now at 9387366 Fix error on event date
-Command [32mgit reset --hard 93873664bffe54307fa0f6f51e1494056c57fe54[0m exited successfully with status 0. Took 0.04932 seconds.
+Command [32mgit reset --hard 93873664bffe54307fa0f6f51e1494056c57fe54[0m exited successfully with status 0. Took 0.053 seconds.
 
 $ [32mgit submodule update --init --recursive[0m
-Command [32mgit submodule update --init --recursive[0m exited successfully with status 0. Took 0.05168 seconds.
+Command [32mgit submodule update --init --recursive[0m exited successfully with status 0. Took 0.05787 seconds.
 
 $ export SNAP_CI=true
 $ export CI=true
@@ -22,7 +22,7 @@ $ export SNAP_CACHE_DIR=/var/go
 $ export LANG=en_US.UTF-8
 $ export LC_ALL=en_US.UTF-8
 $ export SNAP_WORKING_DIR=/var/snap-ci/repo
-$ export SNAP_PIPELINE_COUNTER=279
+$ export SNAP_PIPELINE_COUNTER=280
 $ export SNAP_STAGE_NAME=Dependencies
 $ export SNAP_BRANCH=source
 $ export SNAP_COMMIT=93873664bffe54307fa0f6f51e1494056c57fe54
@@ -31,9 +31,9 @@ $ export SNAP_TRACKING_PIPELINE=true
 $ export SNAP_INTEGRATION_PIPELINE=false
 
 $ [32mbundle install[0m
-Using RedCloth 4.2.9
 Using i18n 0.7.0
 Using json 1.8.3
+Using RedCloth 4.2.9
 Using minitest 5.8.0
 Using thread_safe 0.3.5
 Using addressable 2.3.8
@@ -96,24 +96,24 @@ Using activesupport 4.2.4
 Using toml 0.1.2
 Using celluloid 0.16.0
 Using jekyll-coffeescript 1.0.1
-Using compass 1.0.3
 Using typhoeus 0.8.0
-Using domain_name 0.5.24
+Using compass 1.0.3
 Using koala 2.2.0
+Using domain_name 0.5.24
 Using html-pipeline 1.9.0
 Using listen 2.10.1
-Using http-cookie 1.0.2
 Using github-pages-health-check 0.5.3
-Using http 0.9.7
+Using http-cookie 1.0.2
 Using jekyll-watch 1.2.1
-Using twitter 5.15.0
 Using jekyll 2.4.0
+Using http 0.9.7
+Using twitter 5.15.0
 Using jekyll-mentions 0.2.1
 Using jekyll-redirect-from 0.8.0
 Using jemoji 0.5.0
 Using github-pages 39
 Bundle complete! 6 Gemfile dependencies, 81 gems now installed.
 Bundled gems are installed into /var/go/.bundled-gems.
-Command [32mbundle install[0m exited successfully with status 0. Took 0.86861 seconds.
+Command [32mbundle install[0m exited successfully with status 0. Took 2.8 seconds.
 
 Saving console log for later
