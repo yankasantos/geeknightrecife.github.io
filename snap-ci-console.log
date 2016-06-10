@@ -4,25 +4,25 @@ $ [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m
 Cloning into '.'...
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
 Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0.
-Took 1.65 seconds.
+Took 1.84 seconds.
 
 $ [32mgit checkout source[0m
 /opt/local/gnocci/vendor/cache/mixlib-shellout-e30a3b6a9e49/lib/mixlib/shellout/unix.rb:277: warning: Insecure world writable dir /opt/local/rbenv/shims in PATH, mode 040777
 Switched to a new branch 'source'
 Branch source set up to track remote branch source from origin.
 Command [32mgit checkout source[0m exited successfully with status 0.
-Took 0.0708 seconds.
+Took 0.07789 seconds.
 
 $ [32mgit reset --hard 77f68f35f7d7239c9dfe6106d89350ec04f3b761[0m
 /opt/local/gnocci/vendor/cache/mixlib-shellout-e30a3b6a9e49/lib/mixlib/shellout/unix.rb:277: warning: Insecure world writable dir /opt/local/rbenv/shims in PATH, mode 040777
 HEAD is now at 77f68f3 Snap CI #537
 Command [32mgit reset --hard 77f68f35f7d7239c9dfe6106d89350ec04f3b761[0m exited successfully with status 0.
-Took 0.05134 seconds.
+Took 0.05309 seconds.
 
 $ [32mgit submodule update --init --recursive[0m
 /opt/local/gnocci/vendor/cache/mixlib-shellout-e30a3b6a9e49/lib/mixlib/shellout/unix.rb:277: warning: Insecure world writable dir /opt/local/rbenv/shims in PATH, mode 040777
 Command [32mgit submodule update --init --recursive[0m exited successfully with status 0.
-Took 0.04455 seconds.
+Took 0.15696 seconds.
 
 $ export SNAP_CI=true
 $ export CI=true
@@ -30,7 +30,7 @@ $ export SNAP_CACHE_DIR=/var/go
 $ export LANG=en_US.UTF-8
 $ export LC_ALL=en_US.UTF-8
 $ export SNAP_WORKING_DIR=/var/snap-ci/repo
-$ export SNAP_PIPELINE_COUNTER=564
+$ export SNAP_PIPELINE_COUNTER=565
 $ export SNAP_STAGE_NAME=Dependencies
 $ export SNAP_BRANCH=source
 $ export SNAP_COMMIT=77f68f35f7d7239c9dfe6106d89350ec04f3b761
@@ -40,92 +40,111 @@ $ export SNAP_INTEGRATION_PIPELINE=false
 
 $ [32mrbenv update > /dev/null[0m
 Command [32mrbenv update > /dev/null[0m exited successfully with status 0.
-Took 3.43 seconds.
+Took 4.35 seconds.
 
 $ [32mrbenv download 2.2.0 && rbenv use 2.2.0 && rbenv rehash[0m
 Download and extract ruby ruby-2.2.0
 Ruby ruby-2.2.0 has been installed
 Command [32mrbenv download 2.2.0 && rbenv use 2.2.0 && rbenv rehash[0m exited successfully with status 0.
-Took 1.65 seconds.
+Took 1.83 seconds.
 
 $ [32mbundle install[0m
-Using i18n 0.7.0
-Using json 1.8.3
-Using RedCloth 4.2.9
-Using minitest 5.8.4
-Using thread_safe 0.3.5
-Using addressable 2.3.8
-Using execjs 2.6.0
-Using buftok 0.2.0
-Using chunky_png 1.3.5
-Using coffee-script-source 1.10.0
-Using colorator 0.1
-Using multi_json 1.11.2
-Using sass 3.4.21
-Using rb-fsevent 0.9.7
-Using ffi 1.9.10
-Using unf_ext 0.0.7.2
-Using equalizer 0.0.10
-Using multipart-post 2.0.0
-Using gemoji 2.1.0
-Using net-dns 0.8.0
-Using public_suffix 1.5.3
-Using kramdown 1.9.0
-Using liquid 3.0.6
-Using mercenary 0.3.5
-Using rouge 1.10.1
-Using safe_yaml 1.0.4
-Using jekyll-feed 0.4.0
-Using mini_portile2 2.0.0
-Using jekyll-paginate 1.1.0
-Using jekyll-sitemap 0.10.0
-Using rdiscount 2.1.8
-Using redcarpet 3.3.3
-Using terminal-table 1.5.2
-Using http-form_data 1.0.1
-Using http_parser.rb 0.6.0
-Using naught 1.1.0
-Using simple_oauth 0.3.1
+Fetching gem metadata from http://rubygems.org/
+Fetching version metadata from http://rubygems.org/
+Fetching dependency metadata from http://rubygems.org/
+Installing i18n 0.7.0
+Installing json 1.8.3 with native extensions
+Installing minitest 5.8.4
+Installing RedCloth 4.2.9 with native extensions
+Installing thread_safe 0.3.5
+Installing addressable 2.3.8
+Installing buftok 0.2.0
+Installing execjs 2.6.0
+Installing coffee-script-source 1.10.0
+Installing colorator 0.1
+Installing multi_json 1.11.2
+Installing chunky_png 1.3.5
+Installing rb-fsevent 0.9.7
+Installing sass 3.4.21
+Installing unf_ext 0.0.7.2 with native extensions
+Installing equalizer 0.0.10
+Installing ffi 1.9.10 with native extensions
+Installing multipart-post 2.0.0
+Installing public_suffix 1.5.3
+Installing net-dns 0.8.0
+Installing liquid 3.0.6
+Installing kramdown 1.9.0
+Installing mercenary 0.3.5
+Installing rouge 1.10.1
+Installing safe_yaml 1.0.4
+Installing gemoji 2.1.0
+Installing jekyll-feed 0.4.0
+Installing jekyll-paginate 1.1.0
+Installing mini_portile2 2.0.0
+Installing rdiscount 2.1.8 with native extensions
+Installing jekyll-sitemap 0.10.0
+Installing terminal-table 1.5.2
+Installing http-form_data 1.0.1
+Installing redcarpet 3.3.3 with native extensions
+Installing http_parser.rb 0.6.0 with native extensions
+Installing naught 1.1.0
 Using bundler 1.12.3
-Using jekyll-textile-converter 0.1.0
-Using autoprefixer-rails 6.3.3.1
-Using tzinfo 1.2.2
-Using memoizable 0.4.2
-Using coffee-script 2.4.1
-Using rb-inotify 0.9.7
-Using ethon 0.8.1
-Using unf 0.1.4
-Using compass-core 1.0.3
-Using compass-import-once 1.0.5
-Using jekyll-sass-converter 1.3.0
-Using sass-media_query_combiner 0.0.7
-Using faraday 0.9.2
-Using nokogiri 1.6.7.2
-Using jekyll-coffeescript 1.0.1
-Using activesupport 4.2.5.1
-Using domain_name 0.5.20160216
-Using typhoeus 0.8.0
-Using listen 3.0.6
-Using sawyer 0.6.0
-Using koala 2.2.0
-Using compass 1.0.3
-Using html-pipeline 2.3.0
-Using http-cookie 1.0.2
-Using octokit 4.2.0
-Using http 1.0.2
-Using github-pages-health-check 1.0.1
-Using jekyll-gist 1.4.0
-Using twitter 5.16.0
-Using jekyll-watch 1.3.1
-Using jekyll 3.0.3
-Using jekyll-mentions 1.0.1
-Using jekyll-redirect-from 0.9.1
-Using jekyll-seo-tag 1.3.1
-Using jemoji 0.5.1
-Using github-pages 52
+Installing memoizable 0.4.2
+Installing simple_oauth 0.3.1
+Installing tzinfo 1.2.2
+Installing jekyll-textile-converter 0.1.0
+Installing coffee-script 2.4.1
+Installing compass-core 1.0.3
+Installing autoprefixer-rails 6.3.3.1
+Installing compass-import-once 1.0.5
+Installing jekyll-sass-converter 1.3.0
+Installing faraday 0.9.2
+Installing unf 0.1.4
+Installing rb-inotify 0.9.7
+Installing sass-media_query_combiner 0.0.7
+Installing ethon 0.8.1
+Installing jekyll-coffeescript 1.0.1
+Installing activesupport 4.2.5.1
+Installing sawyer 0.6.0
+Installing koala 2.2.0
+Installing compass 1.0.3
+Installing listen 3.0.6
+Installing domain_name 0.5.20160216
+Installing typhoeus 0.8.0
+Installing jekyll-watch 1.3.1
+Installing octokit 4.2.0
+Installing http-cookie 1.0.2
+Installing jekyll 3.0.3
+Installing jekyll-gist 1.4.0
+Installing github-pages-health-check 1.0.1
+Installing nokogiri 1.6.7.2 with native extensions
+Installing jekyll-redirect-from 0.9.1
+Installing jekyll-seo-tag 1.3.1
+Installing http 1.0.2
+Installing html-pipeline 2.3.0
+Installing twitter 5.16.0
+Installing jemoji 0.5.1
+Installing jekyll-mentions 1.0.1
+Installing github-pages 52
 Bundle complete! 6 Gemfile dependencies, 74 gems now installed.
 Bundled gems are installed into /var/go/.bundled-gems.
+Post-install message from compass:
+    Compass is charityware. If you love it, please donate on our behalf at http://umdf.org/compass Thanks!
+Post-install message from html-pipeline:
+-------------------------------------------------
+Thank you for installing html-pipeline!
+You must bundle Filter gem dependencies.
+See html-pipeline README.md for more details.
+https://github.com/jch/html-pipeline#dependencies
+-------------------------------------------------
+Post-install message from github-pages:
+---------------------------------------------------
+Thank you for installing github-pages!
+GitHub Pages recently upgraded to Jekyll 3.0, which 
+includes some breaking changes. More information:
+https://github.com/blog/2100-github-pages-jekyll-3
+---------------------------------------------------
 Command [32mbundle install[0m exited successfully with status 0.
-Took 0.59071 seconds.
+Took 1 minute 14.7 seconds.
 
 Saving console log for later
