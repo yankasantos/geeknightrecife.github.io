@@ -2,50 +2,50 @@
 ========== housekeeping, ignore =============$ [32mpwd[0m
 /var/snap-ci/repo
 Command [32mpwd[0m exited successfully with status 0.
-Took 0.00517 seconds.
+Took 0.01476 seconds.
 
 $ [32mls -a[0m
 .
 ..
 Command [32mls -a[0m exited successfully with status 0.
-Took 0.02566 seconds.
+Took 0.02466 seconds.
 
 $ [32msudo find -mindepth 1 -delete[0m
 Command [32msudo find -mindepth 1 -delete[0m exited successfully with status 0.
-Took 0.02349 seconds.
+Took 0.02367 seconds.
 
 $ [32mpwd[0m
 /var/snap-ci/repo
 Command [32mpwd[0m exited successfully with status 0.
-Took 0.00477 seconds.
+Took 0.01418 seconds.
 
 $ [32mls -la[0m
 total 8
-drwxrwxr-x 2 go go 4096 Aug 13 03:30 .
-drwxr-x--- 3 go go 4096 Aug 13 03:30 ..
+drwxrwxr-x 2 go go 4096 Aug 13 15:30 .
+drwxr-x--- 3 go go 4096 Aug 13 15:30 ..
 Command [32mls -la[0m exited successfully with status 0.
-Took 0.02574 seconds.
+Took 0.02513 seconds.
 
 =============================================$ [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m
 Cloning into '.'...
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
 Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0.
-Took 1.49 seconds.
+Took 1.2 seconds.
 
 $ [32mgit checkout source[0m
 Switched to a new branch 'source'
 Branch source set up to track remote branch source from origin.
 Command [32mgit checkout source[0m exited successfully with status 0.
-Took 0.07072 seconds.
+Took 0.07015 seconds.
 
 $ [32mgit reset --hard 12523f2ab57cbeced042aacbde6647325431a17b[0m
 HEAD is now at 12523f2 Snap CI #661
 Command [32mgit reset --hard 12523f2ab57cbeced042aacbde6647325431a17b[0m exited successfully with status 0.
-Took 0.05313 seconds.
+Took 0.05192 seconds.
 
 $ [32mgit submodule update --init --recursive[0m
 Command [32mgit submodule update --init --recursive[0m exited successfully with status 0.
-Took 0.04342 seconds.
+Took 0.04277 seconds.
 
 $ export SNAP_CI=true
 $ export CI=true
@@ -53,7 +53,7 @@ $ export SNAP_CACHE_DIR=/var/go
 $ export LANG=en_US.UTF-8
 $ export LC_ALL=en_US.UTF-8
 $ export SNAP_WORKING_DIR=/var/snap-ci/repo
-$ export SNAP_PIPELINE_COUNTER=692
+$ export SNAP_PIPELINE_COUNTER=693
 $ export SNAP_STAGE_NAME=Dependencies
 $ export SNAP_BRANCH=source
 $ export SNAP_COMMIT=12523f2ab57cbeced042aacbde6647325431a17b
@@ -63,13 +63,13 @@ $ export SNAP_INTEGRATION_PIPELINE=false
 
 $ [32mrbenv update > /dev/null[0m
 Command [32mrbenv update > /dev/null[0m exited successfully with status 0.
-Took 3.38 seconds.
+Took 3.59 seconds.
 
 $ [32mrbenv download 2.2.0 && rbenv use 2.2.0 && rbenv rehash[0m
 Download and extract ruby ruby-2.2.0
 Ruby ruby-2.2.0 has been installed
 Command [32mrbenv download 2.2.0 && rbenv use 2.2.0 && rbenv rehash[0m exited successfully with status 0.
-Took 1.77 seconds.
+Took 1.96 seconds.
 
 $ [32mbundle install[0m
 Fetching gem metadata from http://rubygems.org/
@@ -80,13 +80,13 @@ Installing json 1.8.3 with native extensions
 Installing minitest 5.8.4
 Installing RedCloth 4.2.9 with native extensions
 Installing thread_safe 0.3.5
-Installing addressable 2.3.8
 Installing buftok 0.2.0
 Installing execjs 2.6.0
-Installing colorator 0.1
+Installing addressable 2.3.8
 Installing coffee-script-source 1.10.0
-Installing chunky_png 1.3.5
+Installing colorator 0.1
 Installing multi_json 1.11.2
+Installing chunky_png 1.3.5
 Installing rb-fsevent 0.9.7
 Installing sass 3.4.21
 Installing equalizer 0.0.10
@@ -94,31 +94,31 @@ Installing unf_ext 0.0.7.2 with native extensions
 Installing multipart-post 2.0.0
 Installing ffi 1.9.10 with native extensions
 Installing gemoji 2.1.0
-Installing public_suffix 1.5.3
 Installing net-dns 0.8.0
+Installing public_suffix 1.5.3
 Installing kramdown 1.9.0
 Installing mercenary 0.3.5
 Installing liquid 3.0.6
 Installing safe_yaml 1.0.4
 Installing rouge 1.10.1
-Installing mini_portile2 2.0.0
 Installing jekyll-feed 0.4.0
+Installing mini_portile2 2.0.0
 Installing jekyll-paginate 1.1.0
 Installing jekyll-sitemap 0.10.0
 Installing rdiscount 2.1.8 with native extensions
 Installing redcarpet 3.3.3 with native extensions
 Installing terminal-table 1.5.2
-Installing http-form_data 1.0.1
 Installing naught 1.1.0
-Installing simple_oauth 0.3.1
+Installing http-form_data 1.0.1
 Using bundler 1.12.3
 Installing http_parser.rb 0.6.0 with native extensions
-Installing memoizable 0.4.2
+Installing simple_oauth 0.3.1
 Installing tzinfo 1.2.2
-Installing coffee-script 2.4.1
+Installing memoizable 0.4.2
 Installing jekyll-textile-converter 0.1.0
-Installing compass-import-once 1.0.5
+Installing coffee-script 2.4.1
 Installing autoprefixer-rails 6.3.3.1
+Installing compass-import-once 1.0.5
 Installing compass-core 1.0.3
 Installing jekyll-sass-converter 1.3.0
 Installing faraday 0.9.2
@@ -127,27 +127,27 @@ Installing unf 0.1.4
 Installing rb-inotify 0.9.7
 Installing ethon 0.8.1
 Installing jekyll-coffeescript 1.0.1
-Installing sawyer 0.6.0
 Installing activesupport 4.2.5.1
+Installing sawyer 0.6.0
 Installing koala 2.2.0
-Installing domain_name 0.5.20160216
-Installing listen 3.0.6
 Installing compass 1.0.3
+Installing listen 3.0.6
+Installing domain_name 0.5.20160216
 Installing typhoeus 0.8.0
 Installing octokit 4.2.0
-Installing http-cookie 1.0.2
 Installing nokogiri 1.6.7.2 with native extensions
 Installing jekyll-watch 1.3.1
+Installing http-cookie 1.0.2
 Installing jekyll-gist 1.4.0
 Installing github-pages-health-check 1.0.1
 Installing http 1.0.2
 Installing jekyll 3.0.3
-Installing twitter 5.16.0
 Installing jekyll-redirect-from 0.9.1
+Installing twitter 5.16.0
 Installing jekyll-seo-tag 1.3.1
 Installing html-pipeline 2.3.0
-Installing jekyll-mentions 1.0.1
 Installing jemoji 0.5.1
+Installing jekyll-mentions 1.0.1
 Installing github-pages 52
 Bundle complete! 6 Gemfile dependencies, 74 gems now installed.
 Bundled gems are installed into /var/go/.bundled-gems.
@@ -168,6 +168,6 @@ includes some breaking changes. More information:
 https://github.com/blog/2100-github-pages-jekyll-3
 ---------------------------------------------------
 Command [32mbundle install[0m exited successfully with status 0.
-Took 1 minute 7.67 seconds.
+Took 1 minute 7.19 seconds.
 
 Saving console log for later
