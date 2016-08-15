@@ -2,50 +2,50 @@
 ========== housekeeping, ignore =============$ [32mpwd[0m
 /var/snap-ci/repo
 Command [32mpwd[0m exited successfully with status 0.
-Took 0.02701 seconds.
+Took 0.017 seconds.
 
 $ [32mls -a[0m
 .
 ..
 Command [32mls -a[0m exited successfully with status 0.
-Took 0.0263 seconds.
+Took 0.02566 seconds.
 
 $ [32msudo find -mindepth 1 -delete[0m
 Command [32msudo find -mindepth 1 -delete[0m exited successfully with status 0.
-Took 0.0292 seconds.
+Took 0.02529 seconds.
 
 $ [32mpwd[0m
 /var/snap-ci/repo
 Command [32mpwd[0m exited successfully with status 0.
-Took 0.02436 seconds.
+Took 0.0146 seconds.
 
 $ [32mls -la[0m
 total 8
-drwxrwxr-x 2 go go 4096 Aug 14 15:30 .
-drwxr-x--- 3 go go 4096 Aug 14 15:30 ..
+drwxrwxr-x 2 go go 4096 Aug 15 03:30 .
+drwxr-x--- 3 go go 4096 Aug 15 03:30 ..
 Command [32mls -la[0m exited successfully with status 0.
-Took 0.02579 seconds.
+Took 0.02543 seconds.
 
 =============================================$ [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m
 Cloning into '.'...
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
 Command [32mgit clone git@localhost:geeknightrecife/geeknightrecife.github.io .[0m exited successfully with status 0.
-Took 1.54 seconds.
+Took 1.68 seconds.
 
 $ [32mgit checkout source[0m
 Switched to a new branch 'source'
 Branch source set up to track remote branch source from origin.
 Command [32mgit checkout source[0m exited successfully with status 0.
-Took 0.06872 seconds.
+Took 0.06108 seconds.
 
 $ [32mgit reset --hard 12523f2ab57cbeced042aacbde6647325431a17b[0m
 HEAD is now at 12523f2 Snap CI #661
 Command [32mgit reset --hard 12523f2ab57cbeced042aacbde6647325431a17b[0m exited successfully with status 0.
-Took 0.05061 seconds.
+Took 0.05318 seconds.
 
 $ [32mgit submodule update --init --recursive[0m
 Command [32mgit submodule update --init --recursive[0m exited successfully with status 0.
-Took 0.04253 seconds.
+Took 0.04457 seconds.
 
 $ export SNAP_CI=true
 $ export CI=true
@@ -53,7 +53,7 @@ $ export SNAP_CACHE_DIR=/var/go
 $ export LANG=en_US.UTF-8
 $ export LC_ALL=en_US.UTF-8
 $ export SNAP_WORKING_DIR=/var/snap-ci/repo
-$ export SNAP_PIPELINE_COUNTER=695
+$ export SNAP_PIPELINE_COUNTER=696
 $ export SNAP_STAGE_NAME=Dependencies
 $ export SNAP_BRANCH=source
 $ export SNAP_COMMIT=12523f2ab57cbeced042aacbde6647325431a17b
@@ -63,20 +63,20 @@ $ export SNAP_INTEGRATION_PIPELINE=false
 
 $ [32mrbenv update > /dev/null[0m
 Command [32mrbenv update > /dev/null[0m exited successfully with status 0.
-Took 3.18 seconds.
+Took 3.51 seconds.
 
 $ [32mrbenv download 2.2.0 && rbenv use 2.2.0 && rbenv rehash[0m
 Download and extract ruby ruby-2.2.0
 Ruby ruby-2.2.0 has been installed
 Command [32mrbenv download 2.2.0 && rbenv use 2.2.0 && rbenv rehash[0m exited successfully with status 0.
-Took 1.77 seconds.
+Took 2.35 seconds.
 
 $ [32mbundle install[0m
+Using RedCloth 4.2.9
 Using i18n 0.7.0
 Using json 1.8.3
 Using minitest 5.8.4
 Using thread_safe 0.3.5
-Using RedCloth 4.2.9
 Using addressable 2.3.8
 Using execjs 2.6.0
 Using buftok 0.2.0
@@ -110,45 +110,45 @@ Using http_parser.rb 0.6.0
 Using naught 1.1.0
 Using simple_oauth 0.3.1
 Using bundler 1.12.3
+Using jekyll-textile-converter 0.1.0
+Using autoprefixer-rails 6.3.3.1
 Using tzinfo 1.2.2
 Using memoizable 0.4.2
-Using autoprefixer-rails 6.3.3.1
 Using coffee-script 2.4.1
-Using compass-core 1.0.3
-Using compass-import-once 1.0.5
-Using jekyll-sass-converter 1.3.0
-Using sass-media_query_combiner 0.0.7
-Using jekyll-textile-converter 0.1.0
 Using rb-inotify 0.9.7
 Using ethon 0.8.1
 Using unf 0.1.4
 Using faraday 0.9.2
+Using compass-core 1.0.3
+Using compass-import-once 1.0.5
+Using jekyll-sass-converter 1.3.0
+Using sass-media_query_combiner 0.0.7
 Using nokogiri 1.6.7.2
 Using activesupport 4.2.5.1
 Using jekyll-coffeescript 1.0.1
 Using listen 3.0.6
 Using typhoeus 0.8.0
-Using compass 1.0.3
 Using domain_name 0.5.20160216
 Using sawyer 0.6.0
 Using koala 2.2.0
+Using compass 1.0.3
+Using html-pipeline 2.3.0
 Using jekyll-watch 1.3.1
-Using http-cookie 1.0.2
 Using octokit 4.2.0
 Using jekyll 3.0.3
-Using http 1.0.2
-Using html-pipeline 2.3.0
-Using twitter 5.16.0
 Using github-pages-health-check 1.0.1
 Using jekyll-gist 1.4.0
+Using http-cookie 1.0.2
+Using http 1.0.2
 Using jekyll-mentions 1.0.1
 Using jekyll-redirect-from 0.9.1
 Using jekyll-seo-tag 1.3.1
 Using jemoji 0.5.1
 Using github-pages 52
+Using twitter 5.16.0
 Bundle complete! 6 Gemfile dependencies, 74 gems now installed.
 Bundled gems are installed into /var/go/.bundled-gems.
 Command [32mbundle install[0m exited successfully with status 0.
-Took 0.61184 seconds.
+Took 0.5505 seconds.
 
 Saving console log for later
